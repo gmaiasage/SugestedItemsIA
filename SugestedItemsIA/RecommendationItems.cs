@@ -48,8 +48,8 @@ namespace SugestedItemsIA
 
         public IAItemList GetItemSugetions(string itemId) {
             IAItemList itemIAs = new IAItemList() ;
-            var target = _items.FirstOrDefault(i => i.ItemID.Equals(itemId));
-            if (target == null) return new IAItemList();
+            //var target = _items.FirstOrDefault(i => i.ItemID.Equals(itemId));
+            //if (target == null) return new IAItemList();
             var __items = _items
                .Where(i => !i.ItemID.Equals(itemId));
             var Items = __items
